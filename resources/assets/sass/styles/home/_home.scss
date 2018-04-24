@@ -1,0 +1,72 @@
+.home-page {
+  margin-top: 50px;
+  
+  @media screen and (max-width: 1024px ) {
+    margin-top: 0;
+  }
+  
+  .home-page-content {
+    .listing-devices {
+      background: #ffffff;
+      display: inline-flex;
+      padding: 1em;
+      border: 1px solid rgba(0,0,0,.125);
+      
+      .main-div {
+        width: 70em;
+        
+        @media screen and (max-width: 1024px) {
+          width: 50em;
+        }
+        
+        .device-title {
+          color: #2d2d2d;
+          font-weight: 500;
+          font-family: sans-serif;
+          margin-bottom: 5px;
+        }
+        
+        .device-instruction {
+          color: rgba(0,0,0,.25);
+          font-family: helvetica;
+        }
+      }
+      
+      .status-div {
+        padding: 2em 1em;
+        text-align: right;
+        width: 100%;
+        
+        @media screen and (max-width: 1024px) {
+          padding: 3em 1em;
+        }
+      }
+    }
+  }
+  
+  .home-page-content-no-device {
+    position: relative;
+    height: 60vh;
+    
+    .no-device-content {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      text-align: center;
+      width: 100%;
+      
+      span {
+        font-size: 1.3rem;
+        font-family: helvetica;
+        font-weight: 500;
+        color: rgba(0,0,0,.25);
+      }
+      a {
+        border-radius: 20px;
+        color: #ffffff;
+        margin-top: 10px;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

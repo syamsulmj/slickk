@@ -1,0 +1,33 @@
+#!/bin/bash
+
+env="$1"
+
+
+echo "Launching localhost initiated....."
+echo "You can simply run server prod in your terminal by adding export PATH into your .bash_profile"
+echo "Follow the steps in README in 'Exporting PATH' section for futher information"
+echo "Setting up the localhost..."
+printf "\n"
+
+if [[ "$env" == "prod" ]]; then
+  printf "\nYou have entered the production localhost. You can now use localhost:8000 for localhosting.\n\n"
+  php artisan serve --host=0.0.0.0
+fi
+
+if [["$env" == "setup-bash"]]; then
+  echo "Setting up the path..."
+  echo "# set PATH so it includes user's private bin directories" >> ~/.bash_profile
+  echo 'PATH="$HOME/bin:$HOME/.local/bin:$PATH"' >> ~/.bash_profile
+  echo 'export PATH=./bin:$PATH' >> ~/.bash_profile
+  source ~/.bash_profile
+  echo "DONE! You can now use 'server prod' to run your localhost"
+fi
+
+if [["$env" == "setup"]]; then
+  echo "Setting up the path..."
+  echo "# set PATH so it includes user's private bin directories" >> ~/.profile
+  echo 'PATH="$HOME/bin:$HOME/.local/bin:$PATH"' >> ~/.profile
+  echo 'export PATH=./bin:$PATH' >> ~/.profile
+  source ~/.profile
+  echo "DONE! You can now use 'server prod' to run your localhost"
+fi

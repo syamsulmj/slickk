@@ -1,0 +1,134 @@
+.login-page {
+  background: #0e0039;
+  background: linear-gradient(#5921d1, #28228f, #0e0039);
+  min-height: 100vh;
+
+}
+
+.login-page-content {
+  text-align: center;
+  text-align: -webkit-center;
+  padding-top: 10em;
+
+  .customed-alert {
+    width: 22em;
+  }
+
+  .login-page-title {
+    h1 {
+      &.title {
+        color: #e66fff !important;
+        font-size: 8rem;
+        font-weight: 500;
+        font-family: 'Great Vibes', cursive;
+      }
+    }
+  }
+
+  .login-page-form {
+    margin-top: 3em;
+    text-align: center;
+    text-align: -webkit-center;
+
+    form {
+      width: 20em;
+
+      .warning-message {
+        color: #e20000 !important;
+        margin-top: -18px;
+        text-align: left;
+
+        &.special {
+          margin: 0;
+          text-align: center;
+        }
+      }
+
+      .customed {
+        input {
+          background: transparent;
+          color: #ffffff;
+          border-radius: 0;
+          border: none;
+          border-bottom: 1px solid #ffffff;
+
+          &::placeholder {
+            color: #ffffff !important;
+            opacity: 1;
+          }
+          &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+             color: #ffffff !important;
+          }
+
+          &::-ms-input-placeholder { /* Microsoft Edge */
+             color: #ffffff !important;
+          }
+          &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+            font-size: 1rem;
+            transition: font-size 1s;
+          }
+
+        }
+      }
+
+      .customed-warning {
+        input {
+          background: transparent;
+          color: #ffffff;
+          border-radius: 0;
+          border: none;
+          border-bottom: 1px solid #e20000;
+
+          &::placeholder {
+            color: #e20000 !important;
+            opacity: 1;
+          }
+          &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+             color: #e20000 !important;
+          }
+
+          &::-ms-input-placeholder { /* Microsoft Edge */
+             color: #e20000 !important;
+          }
+          &:focus {
+            outline: none !important;
+            box-shadow: none !important;
+            font-size: 1rem;
+            transition: font-size 1s;
+          }
+
+        }
+      }
+
+      .customed-logo {
+        span {
+          background: transparent;
+          color: #ffffff;
+          border-radius: 0;
+          border: none;
+          border-bottom: 1px solid #ffffff;
+        }
+      }
+
+      .customed-logo-warning {
+        span {
+          background: transparent;
+          color: #e20000;
+          border-radius: 0;
+          border: none;
+          border-bottom: 1px solid #e20000;
+        }
+      }
+
+      .customed-button {
+        margin-top: 1.7em;
+        .make-oval {
+          border-radius: 20px;
+          width: 9.8em;
+        }
+      }
+    }
+  }
+}

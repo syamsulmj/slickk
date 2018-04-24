@@ -1,0 +1,68 @@
+.profile-section {
+  margin-top: 50px;
+  text-align: center;
+
+  .profile-image {
+    text-align: center;
+
+    img {
+      width: 15em;
+      height: 15em;
+
+
+
+      @media screen and (max-width: 721px) {
+        width: 10em;
+        height: 10em;
+      }
+    }
+  }
+
+  .profile-details {
+    margin-top: 30px;
+    font-family: $font-family-sans-serif;
+
+    .name {
+      span {
+        font-size: 2rem;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.5);
+
+        -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+        animation-name: user-name;
+        animation-duration: 2s;
+
+        /* Safari 4.0 - 8.0 */
+        @-webkit-keyframes user-name {
+            from {font-size: 0;}
+            to {font-size: 2rem;}
+        }
+
+        /* Standard syntax */
+        @keyframes user-name {
+          from {font-size: 0;}
+          to {font-size: 2rem;}
+        }
+      }
+    }
+
+    .email {
+      margin-top: 20px;
+
+      span {
+        font-size: 1.2rem;
+        color: rgba(0, 0, 0, 0.25);
+      }
+    }
+
+    .active-device {
+      margin-top: 10px;
+
+      span {
+        font-size: 1.2rem;
+        color: rgba(0, 0, 0, 0.8);;
+      }
+    }
+  }
+}
