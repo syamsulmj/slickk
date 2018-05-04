@@ -31,6 +31,14 @@
               <input class="form-control" placeholder="Device port name (eg port: 4)" name="device-port"/>
             @endif
           </div>
+          <div class="form-group col-md-4 no-padding">
+            <label for="device-type">Example select</label>
+            <select class="form-control" id="device-type" name="device-type">
+              <option>Normal Device</option>
+              <option>Servo Motor</option>
+              <option>Sensor</option>
+            </select>
+          </div>
           <div class="informative-text">
             <span>Please note that you need to turn OFF your device first before integrate with the system.</span>
           </div>

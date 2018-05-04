@@ -10537,6 +10537,10 @@ a.text-dark:focus {
   font-family: helvetica;
 }
 
+.list-device .list-device-content .list-device-form-content form .no-padding {
+  padding: 0 !important;
+}
+
 .list-device .list-device-content .list-device-form-content form .informative-text {
   margin-top: 5px;
   margin-bottom: 5px;

@@ -1,12 +1,12 @@
 .list-device {
   margin-top: 50px;
   background: #ffffff;
-  
+
   @media screen and (max-width: 1024px) {
     padding: 0;
     margin-top: 0;
   }
-  
+
   .list-device-content {
     padding: 1em;
     .list-device-title {
@@ -25,7 +25,11 @@
           font-size: 1.2rem;
           font-family: helvetica;
         }
-        
+
+        .no-padding {
+          padding: 0 !important;
+        }
+
         .informative-text {
           margin-top: 5px;
           margin-bottom: 5px;
@@ -33,22 +37,22 @@
             font-size: .7rem;
             color: rgba(0, 0, 0, .2);
           }
-          
+
         }
-        
+
         .customed-button {
           text-align: right;
-          
+
         }
-        
+
         .warning-input {
           border: 1px solid #e20000;
-          
+
           &::placeholder {
             color: #e20000;
           }
         }
-        
+
         .warning-text {
           margin-top: 5px;
           span {
