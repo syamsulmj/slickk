@@ -36,7 +36,7 @@
             <select class="form-control" id="device-type" name="device-type">
               <option>Normal Device</option>
               <option>Servo Motor</option>
-              <option>Sensor</option>
+              <option>Sensor Device</option>
             </select>
           </div>
           <div class="informative-text">

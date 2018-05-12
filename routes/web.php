@@ -13,5 +13,5 @@ Route::get('get-port/{email}/{instruction}', 'DataController@get_port');
 Route::get('mobile-update/{email}/secret', 'DataController@mobile_update');
 Route::get('/edit-device', 'ListedDevicesController@edit_device');
 Route::delete('/delete-device/{email}/{device_title}', 'ListedDevicesController@delete_device');
-Route::post('/edit-device', 'ListedDevicesController@update_device');
+Route::post('/edit-device-change', 'ListedDevicesController@update_device');
 Route::get('/profile', 'HomeController@show_profile');

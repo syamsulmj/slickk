@@ -29,11 +29,25 @@ class ListedDevicesController extends Controller
 
       $email = session('email');
       $device_name = Helpers::raw($request->input('device-name'));
+      $device_type;
+
+      if ($request->input('device-type') == 'Normal Device') {
+        $device_type = 'ND';
+      }
+
+      elseif ($request->input('device-type') == 'Servo Motor') {
+        $device_type = 'SM';
+      }
+
+      elseif ($request->input('device-type') == 'Sensor Device') {
+        $device_type = 'SD';
+      }
 
       ListedDevice::create([
         'email' => Crypt::decrypt($email),
         'device_title' => $device_name,
         'device_port' => $request->input('device-port'),
+        'device_type' => $device_type,
         'status' => false
       ]);
 

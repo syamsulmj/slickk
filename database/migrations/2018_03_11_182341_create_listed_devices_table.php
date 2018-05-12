@@ -13,6 +13,7 @@ class CreateListedDevicesTable extends Migration
             $table->string('email');
             $table->string('device_title');
             $table->string('device_port');
+            $table->string('device_type');
             $table->boolean('status');
             $table->timestamps();
         });

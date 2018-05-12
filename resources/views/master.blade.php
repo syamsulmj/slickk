@@ -1,4 +1,4 @@
-<!-- 
+<!--
   Author: Syamsul Mohd Jafri
   Email: syamsulmj94@gmail.com
   Github: github.com/syamsulmj
@@ -12,7 +12,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="{{asset('/css/app.css')}}" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="icon" href="{{ asset('images/slickk_logo.png') }}">
     <script src="{{asset('/js/app.js')}}"></script>
+    @if (session('login?'))
+      <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+      <script>
+        var OneSignal = window.OneSignal || [];
+        OneSignal.push(function() {
+          OneSignal.init({
+            appId: "e52922af-3af2-4876-abeb-8a85392651cb",
+          });
+        });
+      </script>
+    @endif
     <title>Slickk</title>
   </head>
   @if (url()->current() == action('HomeController@loginPage') || url()->current() == action('HomeController@register'))
@@ -26,5 +38,5 @@
     </body>
   @endif
   @include('shared.loading_modal')
-  
+
 </html>
