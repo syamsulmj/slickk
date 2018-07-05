@@ -32,7 +32,7 @@
             @endif
           </div>
           <div class="form-group col-md-4 no-padding">
-            <label for="device-type">Example select</label>
+            <label for="device-type" class="form-label">Select Device Type</label>
             <select class="form-control" id="device-type" name="device-type">
               <option>Normal Device</option>
               <option>Servo Motor</option>
